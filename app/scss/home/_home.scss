@@ -1,0 +1,89 @@
+.home {
+  height: 100vh;
+  margin-top: -123px;
+  @media (max-height: 680px) {
+    margin-top: -80px;
+  }
+  @media (max-width: 650px) {
+    margin-top: 0;
+    height: auto;
+  }
+
+  &__inner {
+    @include flex-column(0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @media (max-width: 650px) {
+      height: max-content;
+    }
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 500;
+    max-width: 650px;
+    text-align: center;
+    letter-spacing: -5.443px;
+    line-height: 101%;
+    text-transform: uppercase;
+    margin: 0 auto 48px;
+    @media (max-height: 670px) {
+      font-size: 64px;
+    }
+    @media (max-width: 1300px) {
+      font-size: 72px;
+      letter-spacing: -4.3px;
+    }
+    @include r($desktop) {
+      font-size: 68px;
+      letter-spacing: -3.4px;
+    }
+    @include r($lg) {
+      font-size: 62px;
+      max-width: 580px;
+      letter-spacing: -2.7px;
+    }
+    @include r($tablet) {
+      font-size: 58px;
+    }
+    @include r($sm) {
+      font-size: 52px;
+      letter-spacing: -2.2px;
+      max-width: 540px;
+    }
+    @include r($phone) {
+      font-size: 46px;
+      letter-spacing: -1.8px;
+    }
+    @media (max-width: 410px) {
+      font-size: 44px;
+      letter-spacing: -1.4px;
+    }
+    @media (max-width: 390px) {
+      font-size: 42px;
+    }
+  }
+
+  &__text {
+    @include flex-column(24);
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 590px;
+    line-height: 150%;
+    margin: 0 auto 40px;
+    color: rgba(#BAC3FF, .6);
+    @include r($sm) {
+      max-width: 500px;
+    }
+  }
+
+  &__line {
+    width: 225px;
+    height: 1px;
+    background: #7279AB;
+  }
+}

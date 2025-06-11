@@ -1,0 +1,11 @@
+.header {
+  padding-top: 23px;
+  margin-bottom: 40px;
+  @media (max-width: 650px) {
+    margin-bottom: 75px;
+  }
+
+  &__inner {
+    @include flex-between-center-gap(30);
+  }
+}

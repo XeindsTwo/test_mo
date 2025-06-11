@@ -1,0 +1,53 @@
+.btn {
+  @include flex-align-center(10);
+  justify-content: center;
+  padding: 17px 23px;
+  font-size: 24px;
+  line-height: 1;
+  border: 1px solid #1b2252;
+  background-color: #04092C;
+  color: #7279AB;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: max-content;
+  transition: color .4s, background-color .4s, border .4s;
+  @media (max-height: 670px) {
+    font-size: 20px;
+  }
+  @media (max-width: 1300px) {
+    font-size: 22px;
+  }
+  @include r($desktop) {
+    font-size: 20px;
+  }
+  @include r($sm) {
+    font-size: 18px;
+  }
+  @include r($phone) {
+    font-size: 17px;
+  }
+
+  &:hover {
+    background-color: #0b113d;
+  }
+
+  &:active {
+    background-color: transparent;
+    border-color: rgba($white, .3);
+  }
+
+  &--solid {
+    background-color: #7081FF;
+    color: #04092C;
+
+    &:hover {
+      background-color: #4C5CCE;
+    }
+
+    &:active {
+      background-color: #5c70ff;
+      border-color: transparent;
+      color: $white;
+    }
+  }
+}
