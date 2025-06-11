@@ -1,6 +1,12 @@
 .html {
   position: relative;
   overflow-x: hidden;
+  @include r($sm) {
+    overflow-y: hidden;
+  }
+  @media (max-height: 590px) {
+    overflow-y: visible;
+  }
 }
 
 .body {
@@ -10,7 +16,7 @@
   font-weight: 400;
   min-height: 100vh;
   font-size: 24px;
-  background-image: url("../images/home.png");
+  background-image: url("../images/home.webp");
   line-height: 1.5;
   color: #BAC3FF;
   background-color: #04092C;

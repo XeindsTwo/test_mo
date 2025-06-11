@@ -78,6 +78,8 @@
     color: rgba(#BAC3FF, .6);
     @include r($sm) {
       max-width: 500px;
+      gap: 18px;
+      margin-bottom: 34px;
     }
   }
 
